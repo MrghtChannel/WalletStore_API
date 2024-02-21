@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Додати програму Android</title>
+  <!-- Підключення Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Додати нову програму Android</h2>
+    <form action="/add_application" method="POST"> <!-- Corrected action attribute -->
+      <div class="form-group">
+        <label for="name">Назва програми:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Короткий опис:</label>
+        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="version">Версія:</label>
+        <input type="text" class="form-control" id="version" name="version" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Тип програми:</label>
+        <select class="form-control" id="type" name="type" required>
+          <option value="App">Приложение</option>
+          <option value="Game">Игра</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="status">Статус:</label>
+        <select class="form-control" id="status" name="status" required>
+          <option value="Beta">Beta</option>
+          <option value="Production">Production</option>
+          <option value="Development">Development</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ageRestriction">Вік аудиторії програми:</label>
+        <input type="number" class="form-control" id="ageRestriction" name="ageRestriction" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Автор:</label>
+        <input type="text" class="form-control" id="author" name="author" required>
+      </div>
+      <div class="form-group">
+        <label for="apk">Файл APK:</label>
+        <input type="text" class="form-control" id="apk" name="apk" placeholder="Вставте посилання на файл APK" required>
+      </div>
+      <div class="form-group">
+        <label for="icon">Іконка програми:</label>
+        <input type="text" class="form-control" id="icon" name="icon" placeholder="Вставте посилання на іконку" required>
+      </div>
+      <div class="form-group">
+        <label for="banner1">Банер 1:</label>
+        <input type="text" class="form-control" id="banner1" name="banner1" placeholder="Вставте посилання на банер 1" required>
+      </div>
+      <div class="form-group">
+        <label for="banner2">Банер 2:</label>
+        <input type="text" class="form-control" id="banner2" name="banner2" placeholder="Вставте посилання на банер 2" required>
+      </div>
+      <div class="form-group">
+        <label for="banner3">Банер 3:</label>
+        <input type="text" class="form-control" id="banner3" name="banner3" placeholder="Вставте посилання на банер 3" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Додати програму</button>
+    </form>
+  </div>
+</body>
+</html>
