@@ -24,7 +24,7 @@
 
 ## Ліцензія
 
-Цей проект ліцензований під [MIT License]([https://opensource.org/licenses/MIT](https://github.com/MrghtChannel/WalletStore_API/blob/main/LICENSE)).
+Цей проект ліцензований під [MIT License]([https://github.com/MrghtChannel/WalletStore_API/blob/main/LICENSE]).
 
 ![1](https://github.com/MrghtChannel/WalletStore_API/blob/main/img/1.png)
 ![2](https://github.com/MrghtChannel/WalletStore_API/blob/main/img/2.png)
